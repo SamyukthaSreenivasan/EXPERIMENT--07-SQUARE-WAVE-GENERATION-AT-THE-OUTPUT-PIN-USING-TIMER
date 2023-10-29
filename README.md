@@ -90,45 +90,39 @@ Step10. Double click on the the MCU part to open settings. Next to the Program F
 Step14. click on debug and simulate using simulation as shown below 
  ![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/b8efbfc2-f0c5-4106-8117-3a6e7ac87f6c)
 
-
- 
-
-  
-
 ## STM 32 CUBE PROGRAM :
-
-
-
-
+```
+Developed by:Samyuktha S
+Register Number:212222240089
+```
+```
+MX_GPIO_Init();
+MX_TIM2_Init();
+{
+    HAL_TIM_Base_Start(&htim2);
+    HAL_TIM_PWM_Init(&htim2);
+    HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+}
+```
 
 ## Output screen shots of proteus  :
  
+ ![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/c2f79043-c5e8-4a8f-8be5-865ce6a2ee7e)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
+![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/0f83c342-26f4-49dc-85e4-762ec7db627e)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/dd8bab9a-667d-4635-92d4-7f5433468bb4)
 
-FOR PULSE AT 700
+![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/cb64a41d-067c-41e8-b3fc-63518351e23b)
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/aa910446-41c9-4221-bf2f-d3f5a566364c)
 
-
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+![WhatsApp Image 2023-10-29 at 11 08 55_73107363](https://github.com/SamyukthaSreenivasan/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119475703/50d6ec19-244a-4735-9327-f42f890545c6)
 
 
 ## Result :
